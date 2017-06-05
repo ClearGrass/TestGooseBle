@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wakeup"
+        android:layout_alignParentTop="true"
+        android:maxLines="3"
+        android:ellipsize="end" />
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:fadeScrollbars="false"
+        android:layout_below="@id/wakeup"
+        android:scrollbars="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/testtext"
+            android:ellipsize="end"/>
+    </ScrollView>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:minLines="3"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/btn"
+        android:id="@+id/realtxt"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="go"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:layout_above="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:text="set angle"
+        android:visibility="gone"/>
+
+</RelativeLayout>
